@@ -1,7 +1,10 @@
 #!/usr/bin/env node
 const miio = require('miio');
 const express = require('express')
+const cors = require('cors')
 const app = express()
+
+app.use(cors())
 
 if (process.argv.length !== 4) {
   throw "wrong args"
