@@ -2,8 +2,14 @@ const miio = require('miio');
 const express = require('express')
 const app = express()
 
+if (process.argv.length !== 4) {
+  throw "wrong args"
+}
+const address = process.argv[2]
+const token = process.argv[3]
+
 // Resolve a device, resolving the token automatically or from storage
-miio.device({ address: '192.168.199.32', token: 'bebd745b66dbe73c99d3b08346f4e270' })
+miio.device({ address: address, token: token })
   .then(device => {
     console.log('Connected to', device)
 
