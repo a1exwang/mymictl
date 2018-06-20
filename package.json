@@ -1,0 +1,10 @@
+{
+  "name": "mymictrl",
+  "description": "mymictrl",
+  "version": "0.0.1",
+  "devDependencies": {},
+  "dependencies": {
+    "express": "^4.16.3",
+    "miio": "^0.15.6"
+  }
+}
