@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const miio = require('miio');
 const express = require('express')
 const app = express()
